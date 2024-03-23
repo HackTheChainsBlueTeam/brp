@@ -33,6 +33,18 @@ contract BRP {
         dataObject.totalScore = _totalScore;
     }
 
+    function handleNewRequest(uint256 _userInputScore) public{
+        uint256 old_score = dataObject.totalScore;
+        uint256 new_score = old_score + _userInputScore;
+        dataObject.totalScore = new_score;
+        uint new_number = dataObject.totalNumber + 1;
+        dataObject.totalNumber = new_number;
+        if (dataObject.totalScore > 0) { // Prevent division by zero
+        uint256 calculate_percentage = dataObject.totalScore / dataObject.totalNumber;
+        dataObject.currentPercentage = calculate_percentage;
+        }
+    }
+
     // Getter for totalNumber
     function getTotalNumber() public view returns (uint256) {
         return dataObject.totalNumber;
