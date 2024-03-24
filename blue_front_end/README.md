@@ -44,7 +44,7 @@ Change naming conventions? probably check the exporting and importing of functio
 
 To learn more about Next.js, take a look at the following resources:
 
-I intend to make this repo as minimal as possible
+I intend to make this repo as minimal as possible 
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
