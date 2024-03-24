@@ -1,6 +1,7 @@
 pragma solidity ^0.8.13;
 
 import "./BRP.sol";
+import {console2} from "forge-std/Test.sol";
 
 contract BRPFactory {
     mapping(string => BRP) public brpInstances;
@@ -13,7 +14,7 @@ contract BRPFactory {
         string name;
         uint256 percentage;
     }
-
+    //you can iniatialize it with a bad number (one over 100)
     function createOrUpdateInstance(string memory name, uint256 initialScore) public {
         if (address(brpInstances[name]) == address(0)) {
             // Instance does not exist, create it
@@ -50,7 +51,9 @@ contract BRPFactory {
             // the company name and percentage, respectively.
             string memory name = instance.getName();
             uint percentage = instance.getCurrentPercentage();
-            
+            console2.log(name);
+            console2.log(percentage);
+
             companyDataArray[i] = CompanyData(name, percentage);
         }
         

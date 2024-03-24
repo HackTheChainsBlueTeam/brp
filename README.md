@@ -64,3 +64,10 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+### 
+MEEEEE
+forge script script/deploy-oocs.s.sol --ssig "run() --fork-url #Alchemy_url --broadcast
+forge script script/deployFactory.s.sol:DeployAndManage --fork-url http://localhost:8545 --broadcast
+run anvil --fork-url #arbitrum_url before
+poeticpeach@pop-os:~/Coding/HackTheChains/foundry_example/hello_foundry$ anvil --fork-url $ARBITRUM_MAINNET_ALCH_URL
