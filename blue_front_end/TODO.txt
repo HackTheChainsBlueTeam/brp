@@ -1,0 +1,24 @@
+Nov 3
+We should move the Chain IDs to a seperate folder
+Maybe rename some of the files, ie like Make sure Capital letters and exporting correctly and such
+I kinda want to put like comments in the modals and such to describe the relationships between files
+ToDo definitely add back the classnames back into the SVGS, as well as establish default values
+Look into Content Security Policy
+Hmm that requires looking up the ESM conventions, 
+and also knowhing what ESM conventions the current version of Next.JS uses
+
+were doing test with NFTS using IPFS this is a link: 
+https://ipfs.io/ipfs/QmQWfb3mSuqGDdaW7gPZktC77nynPzyovEQe7BTp4J3FLD/images/00.png
+
+its a squirrel. I love squirrels. squirrels are cool. :)
+minting for arbitrum nft u Need
+address: address
+uint256: CID 
+so for CID were gonna use like this or whatever
+https://ipfs.io/ipfs/QmQWfb3mSuqGDdaW7gPZktC77nynPzyovEQe7BTp4J3FLD/images/00.png
+
+Seems like I need to install Pino? Honestly might be worth it to look more closely in how these packages are installed... since this repo is kinda living I kinda just threw shit together and let bun fix things, and it works,,, but there might be some duplications in package management?
+
+todoI could definitely add a navLinks class that acts the same as the previous React Framework,
+that displays the links and renders them
+so that I could more easily change things. ehhhh...

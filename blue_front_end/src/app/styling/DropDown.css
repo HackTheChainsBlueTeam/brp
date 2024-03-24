@@ -1,0 +1,111 @@
+div.dropdown {
+  box-shadow: var(--box-shadow);
+  width: 150px;
+}
+
+div.dropdown__control,
+div.dropdown__control:hover {
+  color: var(--text-color);
+  background-color: var(--button-bg-color);
+  padding: var(--padding-common);
+  border-radius: var(--border-radius);
+  border: var(--border-default);
+  /* this calculation decomposed is 
+    height of font + 
+    height of top and bottom gap around text + 
+    width of top and bottom borders + 
+    size of top and bottom padding */
+  height: calc(var(--font-size) + 2px + var(--border-width) * 2 + var(--padding-common) * 2);
+}
+
+div.dropdown__control--is-focused {
+  box-shadow: none;
+  border-color: var(--border-color);
+}
+
+div.dropdown__dropdown-indicator {
+  padding: 0px;
+}
+
+div.dropdown__indicator-separator {
+  width: 0px;
+  margin: 0px;
+}
+
+div.dropdown__dropdown-indicator svg {
+  color: var(--text-color);
+}
+
+span.dropdown__indicator-separator {
+  background-color: transparent;
+}
+
+div.dropdown__value-container {
+  padding: 0px;
+}
+
+div.dropdown__input-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  color: var(--text-color);
+}
+
+div.dropdown__single-value {
+  color: var(--text-color);
+  margin: 0px;
+}
+
+div.dropdown__menu-list {
+  padding: 0px;
+}
+
+div.dropdown__menu {
+  top: calc(100% - var(--border-width));
+  margin: 0px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: var(--border-width) var(--border-style) var(--border-color);
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+div.dropdown__option,
+div.dropdown__menu-notice {
+  background-color: inherit;
+  display: block;
+  font-size: inherit;
+  background-color: var(--button-bg-color);
+  color: var(--primary-color);
+  min-height: calc(2px + var(--font-size) + var(--padding-common) * 2);
+  padding: var(--padding-common);
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: var(--invisible);
+  box-sizing: border-box;
+}
+
+div.dropdown__option--is-selected,
+div.dropdown__option:active {
+  background-color: var(--text-color) !important;
+  color: var(--button-bg-color);
+}
+
+div.dropdown__option:not(#react-select-3-option-0) {
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.chain-switcher > div.dropdown > div.dropdown__control,
+.chain-switcher > div.dropdown > div.dropdown__control--is-focused {
+  border-color: var(--border-color-light);
+}

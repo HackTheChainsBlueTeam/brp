@@ -1,0 +1,32 @@
+{
+  "name": "nuked_defi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.28.6",
+    "@web3modal/wagmi": "^4.1.1",
+    "bignumber.js": "^latest",
+    "next": "latest",
+    "pino-pretty": "^10.2.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-responsive": "latest",
+    "react-select": "latest",
+    "viem": "^2.8.18",
+    "wagmi": "^2.5.12"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}

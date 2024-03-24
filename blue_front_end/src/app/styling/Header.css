@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  background-color: var(--bg-color);
+  width: calc(100% - var(--padding-common) * 2);
+  height: var(--header-height);
+}
+
+.header.top-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 96;
+}
+
+.header {
+  border-color: var(--divider-border-color);
+}
+
+.header-container {
+  width: 100%;
+}
+
+.header-logo-container {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.header.at-home {
+  border-color: var(--invisible);
+}
+
+.header.landing-page-mode {
+  background-color: var(--invisible) !important;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.header-button {
+  min-width: 124px;
+}
+
+.header-icon {
+  height: 34px;
+  padding: var(--padding-half);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+}
+
+.header-left {
+  justify-content: start;
+  min-width: var(--side-menu-width);
+  z-index: 10;
+}
+.header-right {
+  justify-content: end;
+}
+.header-center {
+  justify-content: center;
+}
+
+.header-mobile-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-logo {
+  color: var(--text-color);
+  width: 180px;
+}
+
+.app-logo.fill-svg-primary.landing-page-mode path {
+  fill: var(--balance-box-bg);
+}
+
+.header-center-positioning {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

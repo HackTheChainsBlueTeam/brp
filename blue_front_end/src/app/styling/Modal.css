@@ -1,0 +1,49 @@
+.modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.modal {
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+}
+
+.modal-header {
+  flex: 0 1 auto;
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  text-align: right;
+  font-weight: var(--bold-half);
+}
+
+.modal-title {
+  padding: var(--padding-common);
+}
+
+.modal-close {
+  padding: var(--padding-common);
+}
+
+.modal-body {
+  flex: 1 0 auto;
+  background-color: var(--button-bg-color);
+}
+
+.modal.compact {
+  width: 500px;
+}
+
+.transaction-status {
+  width: 500px;
+}

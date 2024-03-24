@@ -1,0 +1,28 @@
+.footer-left,
+.footer-center,
+.footer-right {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-item {
+  margin: var(--margin-common);
+}
+
+.footer-left {
+  justify-content: start;
+}
+.footer-center {
+  justify-content: center;
+  flex-grow: 1;
+}
+.footer-right {
+  justify-content: end;
+}
+
+.footer {
+  color: var(--footer-text-color);
+  display: flex;
+  height: 60px;
+  z-index: 95;
+}

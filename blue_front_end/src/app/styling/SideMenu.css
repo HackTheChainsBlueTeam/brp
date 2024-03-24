@@ -1,0 +1,97 @@
+.side-menu {
+  background-color: var(--bg-color);
+  min-width: var(--side-menu-width);
+  width: var(--side-menu-width);
+  height: calc(100% - var(--header-height) - var(--padding-common) * 4);
+}
+
+.side-menu.left-sticky {
+  position: fixed;
+  z-index: 94;
+}
+
+.side-menu.border-left,
+.side-menu.border-right {
+  border-color: var(--divider-border-color);
+}
+
+.side-menu-wrapper {
+  min-width: var(--side-menu-width);
+}
+
+.side-menu-bottom {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.side-menu-button {
+  transition:
+    background-color var(--transition-time),
+    border var(--transition-time),
+    opacity var(--transition-time);
+}
+
+.side-menu-button:hover > .button-contents > .button-children {
+  opacity: 1 !important;
+}
+
+.side-menu-button > .button-contents > .button-children {
+  justify-content: left;
+  transition: opacity var(--transition-time);
+}
+
+.side-menu-button > .button-contents > .button-icon-start > .svg-icon {
+  background-color: var(--button-bg-color);
+  border-radius: var(--border-radius);
+}
+
+.selected-route > .side-menu-button > .button-contents > .button-icon-start > .svg-icon {
+  background-color: var(--primary-color);
+}
+
+.selected-route
+  > .side-menu-button
+  > .button-contents
+  > .button-icon-start
+  > .svg-icon.fill-svg-primary
+  path,
+.selected-route
+  > .side-menu-button
+  > .button-contents
+  > .button-icon-start
+  > .svg-icon.fill-svg-primary
+  text {
+  fill: var(--secondary-color) !important;
+}
+.selected-route
+  > .side-menu-button
+  > .button-contents
+  > .button-icon-start
+  > .svg-icon.fill-svg-secondary
+  path,
+.selected-route
+  > .side-menu-button
+  > .button-contents
+  > .button-icon-start
+  > .svg-icon.fill-svg-secondary
+  text {
+  fill: var(--primary-color) !important;
+}
+
+.selected-route > .common-button.border-full {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color);
+}
+.selected-route > .common-button > .button-contents > .button-icon-start {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color);
+}
+
+a:not(.selected-route) > .side-menu-button {
+  background-color: var(--unselected-border-bg-color);
+  border-color: var(--unselected-border-color);
+}
+a:not(.selected-route) > .side-menu-button > .button-contents > .button-children,
+a:not(.selected-route) > .side-menu-button > .button-contents > div:not(.button-icon-start) {
+  opacity: var(--opacity-faded);
+}

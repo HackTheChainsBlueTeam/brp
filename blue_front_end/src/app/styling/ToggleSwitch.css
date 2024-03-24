@@ -1,0 +1,79 @@
+.toggle-switch-container {
+  text-align: center;
+}
+.toggle-switch {
+  position: relative;
+  width: 74px;
+  display: inline-block;
+  text-align: left;
+  /* this calculation decomposed is 
+  height of font + 
+  width of top and bottom borders + 
+  size of top and bottom padding */
+  /*height: calc(var(--font-size) + var(--border-width) * 2 + var(--padding-common) * 2);*/
+  height: 34px;
+}
+.toggle-switch-checkbox {
+  display: none;
+}
+.toggle-switch-label {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 100px;
+  border: var(--border-width) var(--border-style) var(--border-color);
+}
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0s ease-in 0s;
+  height: 100%;
+}
+.toggle-switch-inner:before,
+.toggle-switch-inner:after {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 0;
+  line-height: calc(var(--font-size) + var(--border-width) * 2 + var(--padding-common) * 2);
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.toggle-switch-inner:before {
+  content: '';
+  padding-left: 6px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.toggle-switch-inner:after {
+  content: '';
+  padding-right: 6px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: right;
+}
+.switch {
+  border: var(--border-width) var(--border-style) var(--bg-color);
+  border-radius: var(--border-radius);
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: var(--text-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 4px;
+  right: 38px;
+  border-radius: 500px;
+  transition: all 0s ease-in 0s;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .switch {
+  background-color: var(--bg-color);
+  border-color: var(--bg-color);
+  right: 0px;
+}

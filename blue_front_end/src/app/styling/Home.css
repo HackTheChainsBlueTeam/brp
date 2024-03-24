@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--margin-double);
+  padding-bottom: 80px;
+  justify-content: center;
+}
+
+.home-container.mobile {
+  padding-top: 20px;
+}
+
+.home-left {
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.home-right {
+  justify-content: center;
+  align-items: center;
+}
+
+.home-enter-button {
+  width: 200px;
+}

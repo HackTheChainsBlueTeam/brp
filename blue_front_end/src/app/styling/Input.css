@@ -1,0 +1,43 @@
+.common-input-field > form > input {
+  color: var(--text-color);
+  border: none;
+  background-color: var(--button-bg-color);
+}
+
+.common-input-field > form > input:focus {
+  outline: none;
+}
+
+.common-input-field {
+  min-height: 34px;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.common-input-form {
+  height: 100%;
+}
+
+.common-input.input-error > .common-input-field.border-full {
+  border-color: var(--threat-danger-color);
+}
+
+.common-input-label {
+  position: relative;
+  bottom: calc(-1 * var(--font-size-xl) / 2);
+  z-index: 3;
+}
+
+.common-input.input-error > .common-input-label {
+  color: var(--threat-danger-color);
+}
+
+.common-input-error-message {
+  height: calc(var(--font-size) + var(--padding-half));
+  color: var(--threat-danger-color);
+}
+
+.apply-button {
+  min-width: 132px;
+}

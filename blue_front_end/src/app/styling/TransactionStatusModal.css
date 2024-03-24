@@ -1,0 +1,8 @@
+.tx-status-icon {
+  min-width: 30px;
+  max-width: 30px;
+}
+
+.tx-status-waiting {
+  opacity: 0.5;
+}

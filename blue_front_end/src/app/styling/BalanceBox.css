@@ -1,0 +1,12 @@
+.balance-box {
+  background-color: var(--balance-box-bg) !important;
+  color: var(--balance-box-text-1);
+}
+
+.balance-box-divider {
+  border-bottom: 1px solid rgba(var(--text-color-light-4), 1);
+}
+
+.balance-box-icon path {
+  fill: var(--balance-box-icon-fill);
+}

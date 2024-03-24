@@ -1,0 +1,21 @@
+.disclaimer {
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--bg-color-light-4);
+}
+
+.disclaimer-wrapper {
+  position: relative;
+}
+
+.disclaimer-button {
+  width: 200px;
+}
+
+.disclaimer-text-box {
+  max-width: 650px;
+  max-height: 500px;
+  overflow-y: auto;
+  text-align: left;
+}
