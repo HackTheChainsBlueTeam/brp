@@ -43,13 +43,13 @@ contract BRPFactory {
         
         for (uint i = 0; i < instanceNames.length; ++i) {
             // Accessing the contract instance using the identifier from `instanceNames`.
-            YourContract instance = brpInstances[instanceNames[i]];
+            BRP instance = brpInstances[instanceNames[i]];
             
             // Assuming `getCompanyName()` and `getPercentage()` are the functions
             // or public state variables in your contract instances that return
             // the company name and percentage, respectively.
-            string memory name = instance.getCompanyName();
-            uint percentage = instance.getPercentage();
+            string memory name = instance.getName();
+            uint percentage = instance.getCurrentPercentage();
             
             companyDataArray[i] = CompanyData(name, percentage);
         }
