@@ -71,3 +71,14 @@ forge script script/deploy-oocs.s.sol --ssig "run() --fork-url #Alchemy_url --br
 forge script script/deployFactory.s.sol:DeployAndManage --fork-url http://localhost:8545 --broadcast
 run anvil --fork-url #arbitrum_url before
 poeticpeach@pop-os:~/Coding/HackTheChains/foundry_example/hello_foundry$ anvil --fork-url $ARBITRUM_MAINNET_ALCH_URL
+
+### Extra commands
+```
+bun next dev
+source .env
+bun install
+forge install
+forge test
+curl bun
+curl forge
+```
